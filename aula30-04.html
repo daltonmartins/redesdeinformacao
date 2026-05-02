@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Redes de Informação</title>
+	</head>
+	<body>
+		<h1>Aula do dia 30/04/2026</h1>
+		
+		<table>
+			<thead>
+				<tr>
+					<th>Data</th>
+					<th>Valor</th>
+					<th>Temperatura</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>1 janeiro</th>
+					<td>R$100,00</td>
+					<td>30º</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td></td>
+					<td>R$1500,00</td>
+					<td>300º</td>
+				</tr>
+			</tfoot>
+		</table>
+		
+		<form action="exemplo.php" method="get">
+			<p>Cadastro de usuária/o</p>
+			
+			<p> 
+				Digite seu nome:
+				<input type="text" name="nomedousuario" size="50" maxlength="50" />
+			</p>
+			<p> 
+				Digite sua senha:
+				<input type="password" name="senha" size="50" maxlength="50" />
+			</p>
+			<p> 
+				Descreva suas experiências de trabalho:
+				<textarea name="curriculo" cols="40" rows="15"> </textarea>
+			</p>
+			
+			<p>
+				Selecione seu gênero de literatura favorito:
+				<input type="radio" name="literatura" value="Ação" checked="checked"/> Ação
+				<input type="radio" name="literatura" value="Drama"/> Drama
+				<input type="radio" name="literatura" value="Terror"/> Terror
+			</p>
+			
+			<p>
+				Selecione os estilos de música que você gosta:
+				<input type="checkbox" name="musica" value="MPB" checked="checked"/> MPB
+				<input type="checkbox" name="musica" value="Rock"/> Rock
+				<input type="checkbox" name="musica" value="Jazz"/> Jazz
+				<input type="checkbox" name="musica" value="Blues"/> Blues
+			</p>
+			
+			<p>
+				Selecione o curso que você estuda na UnB:
+				<select name="cursosunb">
+					<option value="Biblioteconomia">Biblioteconomia</option>
+					<option value="Arquivologia">Arquivologia</option>
+					<option value="Museologia">Museologia</option>
+					<option value="Ciência da Computação">Ciência da Computação</option>
+				</select>	
+			</p>
+			
+			<p>
+				Selecione as especializações que você já fez:
+				<select name="especializacoes" size="2" multiple="multiple">
+					<option value="Inteligência Artificial">Inteligência Artificial</option>
+					<option value="Ciência de Dados">Ciência de Dados</option>
+					<option value="Programação">Programação</option>
+					<option value="Banco de dados">Banco de dados</option>
+				</select>	
+			</p>
+			
+			<p>Envie uma imagem de seu documento</p>
+			<input type="file" name="documento" />
+			<input type="submit" value="Upload"/>
+			
+			<p>Envie seu email
+			<input type="text" name="email" />
+			<input type="image" src="botao.png" width="100" height="30"/>
+			</p>
+		</form>
+		
+		
+	</body>
+</html>
