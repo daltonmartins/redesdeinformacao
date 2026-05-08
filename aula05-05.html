@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Redes de Informação</title>
+		<style>
+			.importante {
+			  color: blue;
+			}
+			p#citacaoautoridade {
+			  color: green;
+			}
+			
+			p#citacaosimples {
+			  color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Aula do dia 05/05/2026</h1>
+		
+		<!-- Nessa parte do código eu crio o formulário -->
+		<form action="exemplo.php" method="get">
+		
+			<label> Idade: <input type="text" name="idade" /></label>
+			<br/><br/>
+			Curso:
+			<input id="biblioteconomia" type="radio" name="curso" value="b">
+			<label for="biblioteconomia">Biblioteconomia</label>
+			
+			<input id="arquivologia" type="radio" name="curso" value="a">
+			<label for="arquivologia">Arquivologia</label>
+			<br/><br/>
+		
+			<!-- Criei um grupo de elementos do formulário 
+			para coletar informações específicas do contato do usuário.
+			-->
+			<fieldset>
+				<legend> Detalhes do contato</legend>
+				<label>Email: <br /> <input type="text" name="email1"/></label><br />
+				<label>Celular: <br /> <input type="text" name="celular"/></label><br />
+				<label>Fixo: <br /> <input type="text" name="fixo"/></label>
+			</fieldset>
+			<br />
+			
+			
+			<!-- Novas tags criadas pelo HTML5 para melhorar controle 
+			Estou aqui anotando comentários para meu estudo.
+			Essa parte está no livro nas páginas de 50 a 100.
+			-->
+			<label>Senha: <input type="password" name="senha" required="required" /></label>
+			<br /><br />
+			<label>Data: <input type="date" name="data"/>
+			<br /><br />
+			<label>Email: <input type="email" name="email"/>
+			<br /><br />
+			<label>Site: <input type="url" name="site"/>
+			<br /><br />
+			<label>Busca no site: <input type="search" name="busca" placeholder="Digite aqui sua expressão de busca"/>
+			<br /><br />
+			<input type="submit" value="Enviar" />
+		</form>
+		
+		<!-- Vamos agora trabalhar os conceitos de ID e CLASS que são duas
+		formas de identificar pedaços do código para implementar estilizações
+		específicas. De cor, fonte, etc...
+			-->
+			
+		<!-- Atributo ID - identificar de maneira única um pedaço de código HTML 
+		IDs são identificadores únicos - não devem ser repetidos mais de uma vez
+		em uma página.
+		-->
+		<p id="citacaoautoridade"> Aqui vai um texto de uma autoridade no tema </p>
+		<p id="citacaosimples"> Aqui vai um texto corriqueiro </p>
+		
+		<!-- Atributo CLASS - identificar de maneira múltipla um pedaço de código HTML 
+		CLASS são identificadores que podem se repetir -->
+		<p class="importante"> Aqui vai um texto de uma classe </p>
+		<p class="importante"> Aqui vai um texto de uma classe de novo </p>
+	</body>
+</html>
